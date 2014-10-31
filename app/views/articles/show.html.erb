@@ -1,0 +1,27 @@
+<h1><a href="/articles">Caity's Adventures!</a></h1>
+
+<div id="show">
+  <p id="picture"><%= image_tag @article.photo.url(:medium) if @article.photo.present? %></p>
+  <h2 class="title">
+    <%= @article.title %>
+  </h2>
+
+  <p class="text">
+    <%= @article.text.html_safe %>
+  </p>
+
+  <div id="edit-link">
+    <%= link_to 'Edit Post', edit_article_path(@article) %>
+    <%= link_to 'Back', articles_path %>
+    <%= link_to 'Delete', article_path,
+    method: :delete, data: { confirm: 'Are you sure?' } %>
+  </div>
+
+</div>
+<div id="all-comments">
+  <p class="comments" id="add-comment">Add a Comment</p>
+  <p class="comments"><%= render "comments/form" %></p>
+  <br>
+  <h3 id="all-comments-header">All Comments</h3>
+  <p class="comments" id="submitted-comments"><%= render @article.comments %></p>
+</div>

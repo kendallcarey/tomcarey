@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'thiamine';
+  src: url("<%= asset_path 'assets/thiamine.otf' %>");
+}
+
+h1 a {
+  padding-top: 2.15em;
+  font-family: 'thiamine';
+  color: white;
+  font-size: 1em;
+}
+
+#table tr {
+  color: white;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  padding: 10px;
+}
+
+#table td {
+  color: yellow;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  padding: 6px;
+}
+
+#table th {
+  font-size: 24px;
+  color: yellow;
+}
+
+#table {
+  float: left;
+  background-color: rgba(0,0,0,0.8);
+  margin: 10px;
+  display: inline-block;
+  margin-top: 300px;
+  padding: 10px;
+  border-spacing: 10px;
+  border-collapse: separate;
+  border-radius: 0.35rem;
+}
+
+#post {
+  float: right;
+  display: inline-block;
+}
+
+#show, #editor, #new-blog, #post {
+  margin: auto;
+  margin-top: 300px;
+  background-color: rgba(0,0,0,0.8);
+  width: 40em;
+  margin-bottom: 50px;
+  padding: 10px;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  border-radius: 0.35rem;
+}
+
+#show {
+  margin-bottom: 0px;
+}
+
+#show .title, .header, #post .title a {
+  font-size: 4em;
+  color: yellow;
+  margin: 10px;
+}
+
+.text {
+  font-size: 1.5em;
+  text-align: left;
+}
+
+.new {
+  float: left;
+  padding: 7px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.new-header label, #article_title {
+  color: white;
+  margin-top:15px;
+  background-color: rgba(0,0,0,0.8);
+  border: solid 1px #252525;
+  text-align: center;
+}
+
+#edit {
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  padding: 0;
+  background-color: white;
+}
+
+#edit-link {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+#edit-link a {
+  padding: 40px;
+}
+
+.text-field {
+  padding: 10px;
+}
+
+textarea {
+  padding: 0;
+  height:500px;
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#all-comments {
+  text-align: left;
+  color: black;
+  background-color: white;
+  width: 40em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  padding:10px;
+  border-radius: 0.35rem;
+}
+
+#all-comments-header {
+  font-size: 24px;
+  color: black;
+}
+
+.comments {
+  color: black;
+  padding: 5px;
+}
+
+#picture {
+  margin-top: 20px;
+}
+
+#table-posts {
+  display: inline-block;
+}
+
+#add-comment, #all-comments-header {
+  font-weight: bold;
+  margin: 10px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+label {
+  color: white;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+.submit input {
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ border-radius: 10px;
+ background-color: yellow;
+ padding: 5px;
+ margin: 10px;
+ margin-bottom: 25px;
+}
+
+ul li {
+  color: white;
+}
+
+.field_with_errors label {
+  color: white;
+}
+
+.froala-element .not-msie .f-basic {
+  height: 500px;
+}

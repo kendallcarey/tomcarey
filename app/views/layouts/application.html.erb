@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Caity</title>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id="main-content">
+    <div class = "navbar" data-ui = "nav">
+      <div class= "navbar-left">
+        <div class= "nav-link"><a data-scroll href = "/#header">HOME</a></div>
+        <div class= "nav-link"><a data-scroll href = "/#offset">ABOUT</a></div>
+        <div class= "nav-link"><a data-scroll href = "/#offset2">CONTACT</a></div>
+      </div>
+
+      <div class= "navbar-right">
+        <div id= "facebook" class="nav-item" >
+          <a class= "nav-logo" href = "https://www.facebook.com/caity.carey">
+            <i class= "fa fa-facebook-square"></i></a>
+          </div>
+          <div id= "twitter" class= "nav-item" >
+            <a class= "nav-logo" href = "https://twitter.com/caityc2004">
+              <i class= "fa fa-twitter"></i></a>
+            </div>
+            <div id= "linkedin" class= "nav-item" >
+              <a class= "nav-logo" href = "#">
+                <i class= "fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <%= yield %>
+
+        </body>
+        </html>

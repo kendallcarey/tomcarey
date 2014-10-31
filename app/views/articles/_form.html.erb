@@ -1,0 +1,35 @@
+<%= form_for @article, :html => { :multipart => true }  do |f| %>
+<% if @article.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(@article.errors.count, "error") %> prohibited
+    this article from being saved:</h2>
+    <ul>
+      <% @article.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+  <% end %>
+  <p>
+    <%= f.file_field :photo %>
+  </p>
+  <p class="text-field">
+  </p>
+  <p class="new-header">
+    <%= f.label :title %><br>
+  </p>
+  <p>
+    <%= f.text_field :title %>
+  </p>
+  <p class="text-field">
+  </p>
+  <p class="new-header">
+    <%= f.label :text %><br>
+  </p>
+  <p>
+    <%= f.text_area :text, id: "text" %>
+  </p>
+  <p class="submit">
+    <%= f.submit value: "Create Post" %>
+  </p>
+  <% end %>

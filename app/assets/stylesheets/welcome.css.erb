@@ -1,0 +1,222 @@
+
+body {
+  margin-top: 0px;
+  text-align: center;
+  background: url("<%= asset_path 'food.jpg' %>") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 800px;
+  min-width: 1024px;
+}
+
+@font-face {
+  font-family: 'thiamine';
+  src: url("<%= asset_path 'assets/thiamine.otf' %>");
+}
+
+h1 {
+  padding-top: 2.15em;
+  font-family: 'thiamine';
+  color: white;
+  font-size: 8em;
+}
+
+.link {
+  padding-top: 20px;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+a {
+  padding-top: 30px;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  color:yellow;
+}
+
+/*Nav Bar*/
+
+.nav-logo {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  top: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.4rem;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.navbar {
+  width: 100%;
+  height: 3rem;
+  position: fixed;
+  z-index: 1001;
+  background-color: #343434;
+  box-shadow: 0 3px 3px rgba(1,1,1,0.2);
+  -webkit-box-shadow: 0 3px 3px rgba(1,1,1,0.2);
+  -moz-box-shadow: 0 3px 3px rgba(1,1,1,0.2);
+}
+
+.navbar-right, .navbar-left {
+  text-align: center;
+  display: inline;
+  position: fixed;
+}
+
+.navbar-left {
+  margin-left: 3%;
+  left: 0;
+  margin-top: 1.2rem;
+  min-width: 505px;
+}
+
+.navbar-right {
+  margin-right: 5%;
+  right: 0;
+  margin-top: 1rem;
+
+}
+
+.nav-link {
+  display: inline;
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  top: 1rem;
+}
+
+
+.nav-link a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.navbar-left a:after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #73665d;
+  content: '';
+  opacity: 0;
+  -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+  transition: height 0.3s, opacity 0.3s, transform 0.3s;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  transform: translateY(-10px);
+  background: #fff;
+  top: 110%
+}
+
+.navbar-left a:hover:after {
+  height: 3px;
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+.nav-logo{
+  border: 1px solid white;
+  border-radius: 0.35rem;
+}
+
+.nav-logo:hover{
+  background-color: white;
+}
+
+#facebook:hover a {
+  color:#4c66a4;
+}
+
+#twitter:hover a {
+  color:#00aced;
+}
+
+#linkedin:hover a {
+  color: #007bb6;
+}
+
+p, h2, h3 {
+  color: white;
+}
+
+#about {
+  margin: auto;
+  margin-top: 677px;
+  padding-bottom: 200px;
+  width: 40em;
+  height: 8em;
+  background-color: rgba(0,0,0,0.8);
+  text-align: center;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  border-radius: 0.35rem;
+}
+
+#contact {
+  text-align: center;
+  width: 40em;
+  padding-bottom: 200px;
+  background-color: rgba(0,0,0,0.8);
+  margin: auto;
+  margin-top: 300px;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  border-radius: 0.35rem;
+}
+
+#about-me {
+  font-size: 2em;
+  padding-top: 10px;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+#about-content {
+  text-align: left;
+  float: left;
+  margin-top: 2em;
+  margin-left: 1em;
+  display: inline-block;
+  width: 450px;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+#main-photo {
+  width: 150px;
+  margin-right: 20px;
+  padding-bottom: 20px;
+  float: right;
+  display: inline-block;
+}
+
+#offset, #offset2 {
+  margin: 480px;
+}
+
+#name {
+  font-size:2em;
+  padding-top: 100px;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+#email {
+  padding-top: 30px;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+footer {
+  padding: 50px
+}
