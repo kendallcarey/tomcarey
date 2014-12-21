@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Susan Carey</title>
+  <title>Tom Carey</title>
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -16,21 +16,25 @@
         <div class= "nav-link"><a data-scroll href = "/#header">HOME</a></div>
         <div class= "nav-link"><a data-scroll href = "/#offset">ABOUT</a></div>
         <div class= "nav-link"><a data-scroll href = "/#offset2">CONTACT</a></div>
+        <div class="nav-link">
+              <a href="#" id="companies">COMPANIES</a>
+              <ul>
+                <li><a href="http://careyandleisure.com/">Carey and Leisure</a></li>
+                <li><a href="http://clientlegalfunding.com/">Client Legal Funding</a></li>
+                <li><a href="http://www.superpages.com/bp/Clearwater-FL/Mediclaim-Financial-LLC-L2520856928.htm">Mediclaim Financial LLC</a></li>
+              </ul>
+        </div>
       </div>
 
       <div class= "navbar-right">
         <div id= "facebook" class="nav-item" >
-          <a class= "nav-logo" href = "https://www.facebook.com/susan.carey.946?fref=ts">
+          <a class= "nav-logo" href = "https://www.facebook.com/tom.carey.792?fref=ts">
             <i class= "fa fa-facebook-square"></i></a>
           </div>
-            <div id= "linkedin" class= "nav-item" >
-              <a class= "nav-logo" href = "www.linkedin.com/pub/susan-carey/15/96/349">
-                <i class= "fa fa-linkedin"></i></a>
-              </div>
-            </div>
           </div>
+        </div>
 
-          <%= yield %>
+        <%= yield %>
 
-        </body>
-        </html>
+      </body>
+      </html>

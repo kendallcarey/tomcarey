@@ -2,7 +2,7 @@
 body {
   margin-top: 0px;
   text-align: center;
-  background: url("<%= asset_path 'water.jpg' %>") no-repeat center center fixed;
+  background: url("<%= asset_path 'boats.jpg' %>") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -47,6 +47,10 @@ a:hover{
 
 h1 a:hover{
   color:#66CDAA;
+}
+
+h3 p {
+  padding: 7px;
 }
 
 /*Nav Bar*/
@@ -100,8 +104,8 @@ h1 a:hover{
 .nav-link {
   display: inline;
   color: white;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   top: 1rem;
 }
 
@@ -111,6 +115,24 @@ h1 a:hover{
   text-decoration: none;
   color: white;
   position: relative;
+}
+
+.nav-link ul {
+  display: none;
+}
+
+.nav-link ul li {
+  padding: 1rem;
+  float: right;
+  background-color: #343434;
+  box-shadow: 0 3px 3px rgba(1,1,1,0.2);
+  -webkit-box-shadow: 0 3px 3px rgba(1,1,1,0.2);
+  -moz-box-shadow: 0 3px 3px rgba(1,1,1,0.2);
+}
+
+.nav-link:hover > ul {
+  display: block;
+  padding-top: 1rem;
 }
 
 .navbar-left a:after {
