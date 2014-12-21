@@ -1,35 +1,35 @@
 @font-face {
-  font-family: 'silkscreen';
-  src: url("<%= asset_path 'assets/slkscr.ttf' %>");
+  font-family: 'Aquiline';
+  src: url("<%= asset_path 'assets/AquilineTwo.ttf' %>");
 }
 
 @font-face {
-  font-family: 'Share-Reg';
-  src: url("<%= asset_path 'assets/Share-Regular.otf' %>");
+  font-family: 'Andada';
+  src: url("<%= asset_path 'assets/Andada-Regular.otf' %>");
 }
 
 h1 a {
   padding-top: 2.15em;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Aquiline', cursive;
   color: white;
   font-size: 1em;
 }
 
 #table tr {
   color: white;
-  font-family: 'Share-Reg';
+  font-family: 'Andada';
   padding: 10px;
 }
 
 #table td {
-  color: #FF6600;
-  font-family: 'Share-Reg';
+  color: #66CDAA;
+  font-family: 'Andada';
   padding: 6px;
 }
 
 #table th {
   font-size: 24px;
-  color: #FF6600;
+  color: #66CDAA;
 }
 
 #table {
@@ -56,7 +56,7 @@ h1 a {
   width: 40em;
   margin-bottom: 50px;
   padding: 10px;
-  font-family: 'Share-Reg';
+  font-family: 'Andada';
   border-radius: 0.35rem;
 }
 
@@ -66,7 +66,7 @@ h1 a {
 
 #show .title, .header, #post .title a {
   font-size: 4em;
-  color: #FF6600;
+  color: #66CDAA;
   margin: 10px;
 }
 
@@ -92,7 +92,7 @@ h1 a {
 }
 
 #edit {
-  font-family: 'Share-Reg';
+  font-family: 'Andada';
   padding: 0;
   background-color: white;
 }
@@ -157,14 +157,14 @@ textarea {
 
 label {
   color: white;
-  font-family: 'Share-Reg';
+  font-family: 'Andada';
 }
 
 .submit input {
  -webkit-border-radius: 10px;
  -moz-border-radius: 10px;
  border-radius: 10px;
- background-color: #FF6600;
+ background-color: #66CDAA;
  padding: 5px;
  margin: 10px;
  margin-bottom: 25px;
