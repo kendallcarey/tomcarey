@@ -1,35 +1,25 @@
-@font-face {
-  font-family: 'Aquiline';
-  src: url("<%= asset_path 'assets/AquilineTwo.ttf' %>");
-}
-
-@font-face {
-  font-family: 'Andada';
-  src: url("<%= asset_path 'assets/Andada-Regular.otf' %>");
-}
-
 h1 a {
   padding-top: 2.15em;
-  font-family: 'Aquiline', cursive;
+  font-family: 'Balthazar';
   color: white;
   font-size: 1em;
 }
 
 #table tr {
   color: white;
-  font-family: 'Andada';
+  font-family: 'Tohoma';
   padding: 10px;
 }
 
 #table td {
-  color: #66CDAA;
-  font-family: 'Andada';
+  color: #4e4e76;
+  font-family: 'Tohoma';
   padding: 6px;
 }
 
 #table th {
   font-size: 24px;
-  color: #66CDAA;
+  color: #FFCC00;
 }
 
 #table {
@@ -56,7 +46,7 @@ h1 a {
   width: 40em;
   margin-bottom: 50px;
   padding: 10px;
-  font-family: 'Andada';
+  font-family: 'Tohoma';
   border-radius: 0.35rem;
 }
 
@@ -66,7 +56,7 @@ h1 a {
 
 #show .title, .header, #post .title a {
   font-size: 4em;
-  color: #66CDAA;
+  color: #FF2400;
   margin: 10px;
 }
 
@@ -87,12 +77,12 @@ h1 a {
   color: white;
   margin-top:15px;
   background-color: rgba(0,0,0,0.8);
-  border: solid 1px #252525;
+  border: solid 1px #FFCC00;
   text-align: center;
 }
 
 #edit {
-  font-family: 'Andada';
+  font-family: 'Tohoma';
   padding: 0;
   background-color: white;
 }
@@ -157,14 +147,14 @@ textarea {
 
 label {
   color: white;
-  font-family: 'Andada';
+  font-family: 'Tohoma';
 }
 
 .submit input {
  -webkit-border-radius: 10px;
  -moz-border-radius: 10px;
  border-radius: 10px;
- background-color: #66CDAA;
+ background-color: #FFCC00;
  padding: 5px;
  margin: 10px;
  margin-bottom: 25px;
